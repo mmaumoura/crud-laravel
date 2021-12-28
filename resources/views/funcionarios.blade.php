@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+<title>Funcionários</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,9 +26,6 @@
 					</div>
 			        <div class="col-sm-6">
                         <a href="#addFuncionarioModal" data-toggle="modal" type="button" class="btn btn-success pull-right" style="margin-top: 18px;">Adicionar</a>
-                        {{-- <a href="#deletarFuncionarioModal" type="button" class="btn btn-danger">Deletar</a> --}}
-						{{-- <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a> --}}
-						{{-- <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						 --}}
 					</div>
                 </div>
             </div>
@@ -57,18 +54,6 @@
                     @endforeach
                 </tbody>
             </table>
-			<!-- <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div> -->
         </div>
     </div>
 
@@ -151,7 +136,7 @@
 	@endforeach
 	
 	@foreach ($funcionarios as $f)
-	<!-- Delete Modal HTML -->
+	<!-- Destroy Funcionário HTML -->
 		<div id="deleteFuncionariosModal{{$f->id}}" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">

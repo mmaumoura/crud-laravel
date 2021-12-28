@@ -18,12 +18,6 @@ class FuncionariosController extends Controller
         return view('funcionarios', compact('funcionarios', 'cargos'));
     }
 
-
-    public function create()
-    {
-        //
-    }
-
     public function store(Request $request)
     {
         Funcionarios::create([
@@ -33,18 +27,6 @@ class FuncionariosController extends Controller
         ]);
 
         return redirect()->to('/funcionarios'); 
-    }
-
-
-    public function show($id)
-    {
-        //
-    }
-
-
-    public function edit($id)
-    {
-        //
     }
 
     public function update(Request $request, $id)

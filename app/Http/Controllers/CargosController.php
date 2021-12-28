@@ -18,12 +18,6 @@ class CargosController extends Controller
         return view('cargos', compact('cargos'));
     }
 
-
-    public function create()
-    {
-        //
-    }
-
     public function store(Request $request)
     {
         Cargos::create([
@@ -32,18 +26,6 @@ class CargosController extends Controller
         ]);
 
         return redirect()->to('/cargos'); 
-    }
-
-
-    public function show($id)
-    {
-        //
-    }
-
-
-    public function edit($id)
-    {
-        //
     }
 
     public function update(Request $request, $id)

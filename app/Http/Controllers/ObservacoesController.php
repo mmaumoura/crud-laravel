@@ -19,12 +19,6 @@ class ObservacoesController extends Controller
         return view('observacoes', compact('observacoes', 'funcionarios'));
     }
 
-
-    public function create()
-    {
-        //
-    }
-
     public function store(Request $request)
     {
         ObservacaoFuncionarios::create([
@@ -35,19 +29,7 @@ class ObservacoesController extends Controller
 
         return redirect()->to('/observacoes'); 
     }
-
-
-    public function show($id)
-    {
-        //
-    }
-
-
-    public function edit($id)
-    {
-        //
-    }
-
+    
     public function update(Request $request, $id)
     {
         $observacoes = ObservacaoFuncionarios::find($id);
